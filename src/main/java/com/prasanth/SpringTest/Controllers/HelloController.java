@@ -8,7 +8,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello(@RequestParam(name = "name", defaultValue = "User") String name) {
-        return String.format("Hello %s, welcome to the Spring boot Application! ", name);
+        return String.format("Hello %s, Welcome to the Nothing Application", name);
 
     }
 }

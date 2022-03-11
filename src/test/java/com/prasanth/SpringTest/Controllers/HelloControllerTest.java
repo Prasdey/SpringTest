@@ -8,7 +8,7 @@ class HelloControllerTest {
     @Test
     void hello() {
         HelloController controller = new HelloController(); // Arrange
-        String response = controller.hello("World"); // Act
-        assertEquals("Hello, World", response);// Assert
+        String response = controller.hello("User"); // Act
+        assertEquals("Hello User, Welcome to the Nothing Application", response);// Assert
     }
 }

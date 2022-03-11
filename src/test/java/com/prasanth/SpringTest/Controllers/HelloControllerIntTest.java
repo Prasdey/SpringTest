@@ -25,12 +25,12 @@ class HelloControllerIntTest {
     void hello() throws Exception {
         RequestBuilder request = get("/hello");
         MvcResult result = mvc.perform(request).andReturn();
-        assertEquals("Hello, World", result.getResponse().getContentAsString());
+        assertEquals("Hello User, Welcome to the Nothing Application", result.getResponse().getContentAsString());
     }
 
     @Test
     public void testHelloWithName() throws Exception {
-        mvc.perform(get("/hello?name=Dan"))
-                .andExpect(content().string("Hello, Dan"));
+        mvc.perform(get("/hello?name=Prasanth"))
+                .andExpect(content().string("Hello Prasanth, Welcome to the Nothing Application"));
     }
 }
