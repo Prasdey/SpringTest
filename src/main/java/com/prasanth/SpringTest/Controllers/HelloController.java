@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @GetMapping("/hello")
-    public String hello(@RequestParam(name = "name", defaultValue = "User") String name) {
-        return String.format("Hello %s, Welcome to the Nothing Application", name);
+    @GetMapping("/")
+    public String index()  {
+        return "Greetings from Prasanth";
 
     }
 }
